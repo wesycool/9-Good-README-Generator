@@ -11,10 +11,11 @@ Dynamically generates a README.md file from a user's input via Batch.
 
 
 ## Installation
-
+Node.js and NPM install
 
 ## Usage
-
+Run Node index.js on batch and input requirements.
+![video](./generate-readme-file.mp4)
 
 ## License
 MIT License
@@ -40,12 +41,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## Contributing
-
+none
 
 ## Tests
-
+none
 
 ## Questions
-
+none
 
 This project was created by Edmund Wong - [check porfolio](https://wesycool.github.io/portfolio/)
