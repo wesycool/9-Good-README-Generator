@@ -15,6 +15,7 @@ Node.js and NPM install
 
 ## Usage
 Run Node index.js on batch and input requirements.
+
 [![video](./generate-readme-file.jpg)](./generate-readme-file.mp4)
 
 ## License
