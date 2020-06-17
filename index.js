@@ -1,6 +1,7 @@
 const inquirer = require('inquirer')
 const fs = require('fs')
 const axios = require('axios')
+const path = require('path')
 
 const questions = [
     {
@@ -114,7 +115,10 @@ async function init() {
     }
 
     const readme = `# ${getPrompt.title}\n${getPrompt.description}\n\n## Table of Contents\n${tableContent}\n\n${content}This project was created by ${fetchGitHub.data.name} - [check porfolio](${fetchGitHub.data.blog})`
-    if (getPrompt.filename == 'README.md') writeToFile(getPrompt.filename,readme)
+    
+    const folderName = getPrompt.title.split(' ').join('_')
+    fs.mkdir(path.join(__dirname, folderName), (err) => {if (err) return console.error(err)}); 
+    if (getPrompt.filename == 'README.md') writeToFile(`./${folderName}/${getPrompt.filename}`,readme)
 }
 
 init();
